@@ -1,0 +1,52 @@
+[
+  {
+    "tytul": "Minionki",
+    "premiera": 2015,
+    "gatunek": ["Komedia", "Familijny"]
+  },
+  {
+    "tytul": "Incepcja",
+    "premiera": 2010,
+    "gatunek": ["Sci-Fi", "Thriller"]
+  },
+  {
+    "tytul": "Shrek",
+    "premiera": 2001,
+    "gatunek": ["Animacja", "Komedia", "Przygodowy"]
+  },
+  {
+    "tytul": "Matrix",
+    "premiera": 1999,
+    "gatunek": ["Sci-Fi", "Akcja"]
+  },
+  {
+    "tytul": "Forrest Gump",
+    "premiera": 1994,
+    "gatunek": ["Dramat", "Komedia"]
+  },
+  {
+    "tytul": "Avatar",
+    "premiera": 2009,
+    "gatunek": ["Sci-Fi", "Przygodowy"]
+  },
+  {
+    "tytul": "Gladiator",
+    "premiera": 2000,
+    "gatunek": ["Dramat", "Historyczny", "Akcja"]
+  },
+  {
+    "tytul": "Toy Story",
+    "premiera": 1995,
+    "gatunek": ["Animacja", "Familijny", "Komedia"]
+  },
+  {
+    "tytul": "Interstellar",
+    "premiera": 2014,
+    "gatunek": ["Sci-Fi", "Dramat"]
+  },
+  {
+    "tytul": "Joker",
+    "premiera": 2019,
+    "gatunek": ["Dramat", "Thriller"]
+  }
+]
