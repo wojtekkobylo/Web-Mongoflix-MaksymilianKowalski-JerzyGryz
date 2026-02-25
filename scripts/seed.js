@@ -8,8 +8,28 @@ db.recenzje.drop();
 const result = db.filmy.insertMany([
     { "tytul": "Minionki", "premiera": 2015, "gatunek": ["Komedia", "Familijny"] },
     { "tytul": "Incepcja", "premiera": 2010, "gatunek": ["Sci-Fi", "Thriller"] },
-    { "tytul": "Shrek", "premiera": 2001, "gatunek": ["Animacja", "Komedia", "Przygodowy"] }
+    { "tytul": "Shrek", "premiera": 2001, "gatunek": ["Animacja", "Komedia", "Przygodowy"] },
+
+    { "tytul": "Matrix", "premiera": 1999, "gatunek": ["Sci-Fi", "Akcja"] },
+    { "tytul": "Forrest Gump", "premiera": 1994, "gatunek": ["Dramat", "Komedia"] },
+    { "tytul": "Avatar", "premiera": 2009, "gatunek": ["Sci-Fi", "Przygodowy"] },
+    { "tytul": "Gladiator", "premiera": 2000, "gatunek": ["Dramat", "Historyczny", "Akcja"] },
+    { "tytul": "Toy Story", "premiera": 1995, "gatunek": ["Animacja", "Familijny", "Komedia"] },
+    { "tytul": "Interstellar", "premiera": 2014, "gatunek": ["Sci-Fi", "Dramat"] },
+    { "tytul": "Joker", "premiera": 2019, "gatunek": ["Dramat", "Thriller"] },
+
+    { "tytul": "Avengers", "premiera": 2012, "gatunek": ["Akcja", "Sci-Fi"] },
+    { "tytul": "Titanic", "premiera": 1997, "gatunek": ["Dramat", "Romans"] },
+    { "tytul": "Pulp Fiction", "premiera": 1994, "gatunek": ["Kryminalny", "Dramat"] },
+    { "tytul": "Król Lew", "premiera": 1994, "gatunek": ["Animacja", "Familijny", "Dramat"] },
+    { "tytul": "Harry Potter i Kamień Filozoficzny", "premiera": 2001, "gatunek": ["Fantasy", "Przygodowy"] },
+    { "tytul": "Władca Pierścieni: Drużyna Pierścienia", "premiera": 2001, "gatunek": ["Fantasy", "Przygodowy"] },
+    { "tytul": "Mad Max: Na drodze gniewu", "premiera": 2015, "gatunek": ["Akcja", "Sci-Fi"] },
+    { "tytul": "Coco", "premiera": 2017, "gatunek": ["Animacja", "Familijny", "Muzyczny"] },
+    { "tytul": "Zielona Mila", "premiera": 1999, "gatunek": ["Dramat", "Fantasy"] },
+    { "tytul": "Deadpool", "premiera": 2016, "gatunek": ["Akcja", "Komedia"] }
 ]);
+
 
 const idMinionki = result.insertedIds[0];
 const idIncepcja = result.insertedIds[1];
