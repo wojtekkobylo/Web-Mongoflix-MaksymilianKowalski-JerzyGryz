@@ -2,6 +2,7 @@ db = db.getSiblingDB('filmyDB');
 
 db.filmy.drop();
 db.obsada.drop();
+db.recenzje.drop();
 
 
 const result = db.filmy.insertMany([
@@ -29,5 +30,27 @@ db.obsada.insertMany([
         "film_id": idShrek,
         "rezyser": "Andrew Adamson",
         "aktorzy": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "John Lithgow"]
+    }
+]);
+
+
+db.recenzje.insertMany([
+    {
+        "film_id": idMinionki,
+        "recenzent_id": 1,
+        "ocena filmu": 7,
+        "krotka recenzja": "Zabawny i lekki film dla całej rodziny"
+    },
+    {
+        "film_id": idIncepcja,
+        "recenzent_id": 2,
+        "ocena filmu": 9,
+        "krotka recenzja": "Mind-blowing, Nolan jak zawsze mistrz"
+    },
+    {
+        "film_id": idShrek,
+        "recenzent_id": 3,
+        "ocena filmu": 8,
+        "krotka recenzja": "Klasyk animacji, humor ponadczasowy"
     }
 ]);
