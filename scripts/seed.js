@@ -2,7 +2,7 @@ db = db.getSiblingDB('filmyDB');
 
 db.filmy.drop();
 db.obsada.drop();
-db.recenzje.drop();
+db.obsada.recenzje.drop();
 
 
 const result = db.filmy.insertMany([
@@ -31,46 +31,110 @@ const result = db.filmy.insertMany([
 ]);
 
 
-const idMinionki = result.insertedIds[0];
-const idIncepcja = result.insertedIds[1];
-const idShrek = result.insertedIds[2];
+const ids = result.insertedIds;
+
 
 db.obsada.insertMany([
     {
-        "film_id": idMinionki,
-        "rezyser": "Pierre Coffin",
-        "aktorzy": ["Sandra Bullock", "Jon Hamm", "Michael Keaton", "Allison Janney"]
+        film_id: ids[0],
+        rezyser: "Pierre Coffin",
+        aktorzy: ["Sandra Bullock", "Jon Hamm", "Michael Keaton", "Allison Janney"]
     },
     {
-        "film_id": idIncepcja,
-        "rezyser": "Christopher Nolan",
-        "aktorzy": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"]
+        film_id: ids[1],
+        rezyser: "Christopher Nolan",
+        aktorzy: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"]
     },
     {
-        "film_id": idShrek,
-        "rezyser": "Andrew Adamson",
-        "aktorzy": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "John Lithgow"]
-    }
-]);
+        film_id: ids[2],
+        rezyser: "Andrew Adamson",
+        aktorzy: ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "John Lithgow"]
+    },
 
+    {
+        film_id: ids[3],
+        rezyser: "Lana Wachowski, Lilly Wachowski",
+        aktorzy: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+        film_id: ids[4],
+        rezyser: "Robert Zemeckis",
+        aktorzy: ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+    },
+    {
+        film_id: ids[5],
+        rezyser: "James Cameron",
+        aktorzy: ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+    },
+    {
+        film_id: ids[6],
+        rezyser: "Ridley Scott",
+        aktorzy: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
+    },
+    {
+        film_id: ids[7],
+        rezyser: "John Lasseter",
+        aktorzy: ["Tom Hanks", "Tim Allen", "Don Rickles"]
+    },
+    {
+        film_id: ids[8],
+        rezyser: "Christopher Nolan",
+        aktorzy: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    },
+    {
+        film_id: ids[9],
+        rezyser: "Todd Phillips",
+        aktorzy: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"]
+    },
 
-db.recenzje.insertMany([
     {
-        "film_id": idMinionki,
-        "recenzent_id": 1,
-        "ocena filmu": 7,
-        "krotka recenzja": "Zabawny i lekki film dla całej rodziny"
+        film_id: ids[10],
+        rezyser: "Joss Whedon",
+        aktorzy: ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"]
     },
     {
-        "film_id": idIncepcja,
-        "recenzent_id": 2,
-        "ocena filmu": 9,
-        "krotka recenzja": "Mind-blowing, Nolan jak zawsze mistrz"
+        film_id: ids[11],
+        rezyser: "James Cameron",
+        aktorzy: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"]
     },
     {
-        "film_id": idShrek,
-        "recenzent_id": 3,
-        "ocena filmu": 8,
-        "krotka recenzja": "Klasyk animacji, humor ponadczasowy"
+        film_id: ids[12],
+        rezyser: "Quentin Tarantino",
+        aktorzy: ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+    },
+    {
+        film_id: ids[13],
+        rezyser: "Roger Allers, Rob Minkoff",
+        aktorzy: ["Matthew Broderick", "James Earl Jones", "Jeremy Irons"]
+    },
+    {
+        film_id: ids[14],
+        rezyser: "Chris Columbus",
+        aktorzy: ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"]
+    },
+    {
+        film_id: ids[15],
+        rezyser: "Peter Jackson",
+        aktorzy: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"]
+    },
+    {
+        film_id: ids[16],
+        rezyser: "George Miller",
+        aktorzy: ["Tom Hardy", "Charlize Theron", "Nicholas Hoult"]
+    },
+    {
+        film_id: ids[17],
+        rezyser: "Lee Unkrich",
+        aktorzy: ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"]
+    },
+    {
+        film_id: ids[18],
+        rezyser: "Frank Darabont",
+        aktorzy: ["Tom Hanks", "Michael Clarke Duncan", "David Morse"]
+    },
+    {
+        film_id: ids[19],
+        rezyser: "Tim Miller",
+        aktorzy: ["Ryan Reynolds", "Morena Baccarin", "T.J. Miller"]
     }
 ]);
