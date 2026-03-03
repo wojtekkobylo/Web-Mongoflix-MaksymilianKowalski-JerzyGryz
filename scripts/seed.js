@@ -138,3 +138,30 @@ db.obsada.insertMany([
         aktorzy: ["Ryan Reynolds", "Morena Baccarin", "T.J. Miller"]
     }
 ]);
+db.recenzje.insertMany([
+    { "film_id": ids[0], "recenzent_id": 1, "ocena filmu": 8, "krotka recenzja": "Zabawne i urocze!" },
+    { "film_id": ids[0], "recenzent_id": 2, "ocena filmu": 6, "krotka recenzja": "Trochę zbyt chaotyczne." },
+    { "film_id": ids[1], "recenzent_id": 3, "ocena filmu": 10, "krotka recenzja": "Arcydzieło kina sci-fi." },
+    { "film_id": ids[1], "recenzent_id": 4, "ocena filmu": 9, "krotka recenzja": "Wymaga skupienia, ale warto." },
+    { "film_id": ids[2], "recenzent_id": 5, "ocena filmu": 9, "krotka recenzja": "Klasyka animacji, świetny humor." },
+    { "film_id": ids[3], "recenzent_id": 1, "ocena filmu": 10, "krotka recenzja": "Zmienił postrzeganie efektów specjalnych." },
+    { "film_id": ids[4], "recenzent_id": 6, "ocena filmu": 10, "krotka recenzja": "Wzruszająca historia." },
+    { "film_id": ids[5], "recenzent_id": 7, "ocena filmu": 8, "krotka recenzja": "Wizualnie oszałamiający." },
+    { "film_id": ids[6], "recenzent_id": 2, "ocena filmu": 9, "krotka recenzja": "Potężne kino historyczne." },
+    { "film_id": ids[7], "recenzent_id": 8, "ocena filmu": 9, "krotka recenzja": "Najlepsza bajka mojego dzieciństwa." },
+    { "film_id": ids[8], "recenzent_id": 3, "ocena filmu": 10, "krotka recenzja": "Nolan w szczytowej formie." },
+    { "film_id": ids[9], "recenzent_id": 9, "ocena filmu": 9, "krotka recenzja": "Mroczny i niepokojący występ Phoenixa." },
+    { "film_id": ids[10], "recenzent_id": 4, "ocena filmu": 8, "krotka recenzja": "Świetna rozrywka superbohaterska." },
+    { "film_id": ids[11], "recenzent_id": 5, "ocena filmu": 10, "krotka recenzja": "Epicki romans, wciąż robi wrażenie." },
+    { "film_id": ids[12], "recenzent_id": 10, "ocena filmu": 10, "krotka recenzja": "Kultowe dialogi i świetna muzyka." },
+    { "film_id": ids[13], "recenzent_id": 6, "ocena filmu": 9, "krotka recenzja": "Płakałem za każdym razem." },
+    { "film_id": ids[14], "recenzent_id": 7, "ocena filmu": 8, "krotka recenzja": "Magiczny początek wielkiej sagi." },
+    { "film_id": ids[15], "recenzent_id": 8, "ocena filmu": 10, "krotka recenzja": "Najlepsze fantasy w historii." },
+    { "film_id": ids[16], "recenzent_id": 9, "ocena filmu": 9, "krotka recenzja": "Czysta adrenalina!" },
+    { "film_id": ids[17], "recenzent_id": 10, "ocena filmu": 9, "krotka recenzja": "Przepiękna historia o rodzinie." },
+    { "film_id": ids[18], "recenzent_id": 1, "ocena filmu": 10, "krotka recenzja": "Bardzo smutny, ale piękny film." },
+    { "film_id": ids[19], "recenzent_id": 2, "ocena filmu": 8, "krotka recenzja": "Zupełnie inne podejście do Marvela." },
+    { "film_id": ids[1], "recenzent_id": 5, "ocena filmu": 8, "krotka recenzja": "Muzyka Zimmera robi tu robotę." },
+    { "film_id": ids[12], "recenzent_id": 3, "ocena filmu": 9, "krotka recenzja": "Tarantino w najlepszym wydaniu." },
+    { "film_id": ids[4], "recenzent_id": 8, "ocena filmu": 9, "krotka recenzja": "Życie jest jak pudełko czekoladek." }
+]);
