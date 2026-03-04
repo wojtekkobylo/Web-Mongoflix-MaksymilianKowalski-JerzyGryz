@@ -87,7 +87,7 @@ print("Dane zostały poprawnie załadowane do bazy.");
 
 printjson(
     db.filmy.aggregate([
-        { $match: { gatunek: "Akcja", premiera: { $gt: 2020 } } }
+        { $match: { gatunek: "Akcja", premiera: { $gt: 2015 } } }
     ]).toArray()
 );
 
@@ -98,9 +98,27 @@ printjson(
                 _id: "$film_id",
                 avgRating: { $avg: "$ocena" }
             }
+        },
+        {
+            $lookup: {
+                from: "filmy",
+                localField: "_id",
+                foreignField: "_id",
+                as: "film"
+            }
+        },
+        { $unwind: "$film" },
+        {
+            $project: {
+                _id: 0,
+                film_id: "$_id",
+                tytul: "$film.tytul",
+                srednia_ocena: "$avgRating"
+            }
         }
     ]).toArray()
 );
+
 
 db.filmy.find().forEach(film => {
     db.filmy.updateOne(
